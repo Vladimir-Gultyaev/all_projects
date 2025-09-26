@@ -21,6 +21,9 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
+    pygame.draw.line(screen, (255, 0, 0), (100, 100), (700, 500), 5)
+    pygame.draw.rect(screen, (0, 128, 0), pygame.Rect(300, 200, 200, 200))
 
+    pygame.display.update()
 # Деинициализирует все модули pygame, которые были инициализированы ранее.
 pygame.quit()
